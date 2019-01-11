@@ -1,0 +1,3 @@
+[submodule "gym-roboy"]
+	path = gym-roboy
+	url = https://github.com/Roboy/gym-roboy.git
