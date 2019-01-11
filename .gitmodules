@@ -7,3 +7,6 @@
 [submodule "ROS1_WS/src/CARDSflow"]
 	path = ROS1_WS/src/CARDSflow
 	url = https://github.com/CARDSflow/CARDSflow.git
+[submodule "ROS2_WS/src/roboy_communication"]
+	path = ROS2_WS/src/roboy_communication
+	url = https://github.com/Roboy/roboy_communication.git
