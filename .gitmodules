@@ -4,3 +4,6 @@
 [submodule "deep_roboy_contol"]
 	path = deep_roboy_contol
 	url = https://github.com/Roboy/deep_roboy_contol.git
+[submodule "ROS1_WS/src/CARDSflow"]
+	path = ROS1_WS/src/CARDSflow
+	url = https://github.com/CARDSflow/CARDSflow.git
