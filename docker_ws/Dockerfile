@@ -1,4 +1,4 @@
-# Installing ROS1 kinetic base
+# install ROS1 kinetic base
 FROM ros:kinetic-ros-base
 
 # in order to avoid the error: debconf: unable to initialize frontend: Dialog
@@ -17,7 +17,8 @@ apt install -y vim && \
 ## tmux
 apt-get install -y tmux && \
 
-# Download ROS1_WS, ROS2_WS and CARDSflow from Git and compile the files
+
+# download ROS1_WS, ROS2_WS and CARDSflow from git and compile the files
 
 ## CARDSflow needs these packages
 apt install -y ros-kinetic-desktop-full libeigen3-dev libxml2-dev coinor-libipopt-dev \
@@ -69,14 +70,14 @@ apt install --no-install-recommends -y \
 
 rm -rf /var/likb/apt/lists/* && \
 
-## Downloading from Git
+## download DeepAndReinforced repository from git
 mkdir -p ~/tmp_cloning && \
 git clone https://github.com/Roboy/DeepAndReinforced.git ~/tmp_cloning/DeepAndReinforced && \
 mv -v ~/tmp_cloning/* /root && \
 rm -rf ~/tmp_cloning && \
 cd ~/DeepAndReinforced && git submodule update --init --recursive && \ 
 
-## iDynTree
+## build iDynTree
 cd ~/DeepAndReinforced/ROS1_WS/src/CARDSflow/iDynTree/ && \ 
 mkdir build && \ 
 cd build && \ 
@@ -84,7 +85,7 @@ cmake .. && \
 make -j9 && \ 
 make install && \
 
-## qpOASES
+## build qpOASES
 cd ~/DeepAndReinforced/ROS1_WS/src/CARDSflow/qpOASES/ && \
 mkdir build && cd build && \
 cmake .. && \
