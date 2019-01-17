@@ -75,8 +75,6 @@ git clone https://github.com/Roboy/DeepAndReinforced.git ~/tmp_cloning/DeepAndRe
 mv -v ~/tmp_cloning/* /root && \
 rm -rf ~/tmp_cloning && \
 cd ~/DeepAndReinforced && git submodule update --init --recursive && \
-mv ~/DeepAndReinforced/ROS1_WS ~/DeepAndReinforced/ROS1_ROBOY_WS && \
-mv ~/DeepAndReinforced/ROS2_WS ~/DeepAndReinforced/ROS2_ROBOY_WS && \
 
 ## build iDynTree
 cd ~/DeepAndReinforced/ROS1_ROBOY_WS/src/CARDSflow/iDynTree/ && \
@@ -197,4 +195,5 @@ RUN echo "export ROS1_WS=/opt/ros/kinetic" >> ~/.bashrc && \
 	echo "alias zsource_ROS2_INSTALL_WS='source ~/DeepAndReinforced/ROS2_INSTALL_WS/install/setup.zsh'" >> ~/.bashrc && \
 
 	# after each cd command the terminal will execute ll automatically
-	echo 'cd ~\nll\nfunction cd {\n    builtin cd "$@" && ll -F\n    }' >> ~/.bashrc
+	echo "alias ll='ls -al'" >> ~/.bashrc && \
+	echo 'cd ~\nll\nfunction cd {\n    builtin cd "$@" && ll\n    }' >> ~/.bashrc
