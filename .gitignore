@@ -3,3 +3,6 @@
 
 # Python virtual env
 env/
+
+# Tensorboard
+tensorboard_out/
