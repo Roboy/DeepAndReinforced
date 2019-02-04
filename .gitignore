@@ -3,3 +3,7 @@
 
 # Python virtual env
 env/
+__pycache__/
+
+
+ROS2_INSTALL_WS/
