@@ -141,19 +141,15 @@ cd ~/DeepAndReinforced/ROS2_ROBOY_WS/ && \
 
 
 # install OpenAI gym
-mkdir -p ~/tmp_cloning && \
-git clone https://github.com/openai/gym ~/tmp_cloning/gym && \
-mv -v ~/tmp_cloning/* /root && \
-rm -rf ~/tmp_cloning && \
-cd ~/gym && pip3 install -e . && \
+python3 -m pip install -r ~/DeepAndReinforced/gym-roboy/requirements.txt && \
 
+# install gym-roboy
+cd ~/DeepAndReinforced/gym-roboy && pip3 install -e . && \
 
 # install stable baselines
 apt-get update && apt-get install cmake libopenmpi-dev python3-dev zlib1g-dev && \
 pip3 install stable-baselines && \
 
-# install gym-roboy
-cd ~/DeepAndReinforced/gym-roboy && pip3 install -e . && \
 
 # install ranger and zsh
 apt-get update && \
