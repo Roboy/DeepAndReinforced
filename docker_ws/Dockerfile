@@ -166,60 +166,60 @@ rm -rf ~/.local/share/Trash
 
 
 RUN echo "" >> ~/.bashrc && \
-	echo "" >> ~/.bashrc && \
-	echo "# install some export variables, aliases and great features" >> ~/.bashrc && \
-	echo "export ROS1_WS=/opt/ros/kinetic" >> ~/.bashrc && \
-	echo "export ROS1_ROBOY_WS=~/DeepAndReinforced/ROS1_ROBOY_WS" >> ~/.bashrc && \
-	echo "export ROS2_ROBOY_WS=~/DeepAndReinforced/ROS2_ROBOY_WS" >> ~/.bashrc && \
-	echo "export ROS2_INSTALL_WS=~/DeepAndReinforced/ROS2_INSTALL_WS" >> ~/.bashrc && \
-	echo "export CARDSflow=~/DeepAndReinforced/ROS1_ROBOY_WS/src/CARDSflow" >> ~/.bashrc && \
+echo "" >> ~/.bashrc && \
+echo "# install some export variables, aliases and great features" >> ~/.bashrc && \
+echo "export ROS1_WS=/opt/ros/kinetic" >> ~/.bashrc && \
+echo "export ROS1_ROBOY_WS=~/DeepAndReinforced/ROS1_ROBOY_WS" >> ~/.bashrc && \
+echo "export ROS2_ROBOY_WS=~/DeepAndReinforced/ROS2_ROBOY_WS" >> ~/.bashrc && \
+echo "export ROS2_INSTALL_WS=~/DeepAndReinforced/ROS2_INSTALL_WS" >> ~/.bashrc && \
+echo "export CARDSflow=~/DeepAndReinforced/ROS1_ROBOY_WS/src/CARDSflow" >> ~/.bashrc && \
 
-	echo "" >> ~/.bashrc && \
+echo "" >> ~/.bashrc && \
 
-	echo "alias source_ROS1='source /opt/ros/kinetic/setup.bash'">> ~/.bashrc && \
-	echo "alias source_ROS1_ROBOY_WS='source ~/DeepAndReinforced/ROS1_ROBOY_WS/devel/setup.bash'" >> ~/.bashrc && \
-	echo "alias source_ROS2_ROBOY_WS='source ~/DeepAndReinforced/ROS2_ROBOY_WS/install/setup.bash'" >> ~/.bashrc && \
-	echo "alias source_ROS2_INSTALL_WS='source ~/DeepAndReinforced/ROS2_INSTALL_WS/install/setup.bash'" >> ~/.bashrc && \
+echo "alias source_ROS1='source /opt/ros/kinetic/setup.bash'">> ~/.bashrc && \
+echo "alias source_ROS1_ROBOY_WS='source ~/DeepAndReinforced/ROS1_ROBOY_WS/devel/setup.bash'" >> ~/.bashrc && \
+echo "alias source_ROS2_ROBOY_WS='source ~/DeepAndReinforced/ROS2_ROBOY_WS/install/setup.bash'" >> ~/.bashrc && \
+echo "alias source_ROS2_INSTALL_WS='source ~/DeepAndReinforced/ROS2_INSTALL_WS/install/setup.bash'" >> ~/.bashrc && \
 
-	echo "" >> ~/.bashrc && \
+echo "" >> ~/.bashrc && \
 
-	echo "# for bash" >> ~/.bashrc && \
-	echo "alias cd_ROS1_WS='cd /opt/ros/kinetic'" >> ~/.bashrc && \
-	echo "alias cd_ROS1_ROBOY_WS='cd ~/DeepAndReinforced/ROS1_ROBOY_WS'" >> ~/.bashrc && \
-	echo "alias cd_ROS2_ROBOY_WS='cd ~/DeepAndReinforced/ROS2_ROBOY_WS'" >> ~/.bashrc && \
-	echo "alias cd_ROS2_INSTALL_WS='cd ~/DeepAndReinforced/ROS2_INSTALL_WS'" >> ~/.bashrc && \
-	echo "alias cd_CARDSflow='cd ~/DeepAndReinforced/ROS1_ROBOY_WS/src/CARDSflow'" >> ~/.bashrc && \
+echo "# for bash" >> ~/.bashrc && \
+echo "alias cd_ROS1_WS='cd /opt/ros/kinetic'" >> ~/.bashrc && \
+echo "alias cd_ROS1_ROBOY_WS='cd ~/DeepAndReinforced/ROS1_ROBOY_WS'" >> ~/.bashrc && \
+echo "alias cd_ROS2_ROBOY_WS='cd ~/DeepAndReinforced/ROS2_ROBOY_WS'" >> ~/.bashrc && \
+echo "alias cd_ROS2_INSTALL_WS='cd ~/DeepAndReinforced/ROS2_INSTALL_WS'" >> ~/.bashrc && \
+echo "alias cd_CARDSflow='cd ~/DeepAndReinforced/ROS1_ROBOY_WS/src/CARDSflow'" >> ~/.bashrc && \
 
-	echo "" >> ~/.bashrc && \
+echo "" >> ~/.bashrc && \
 
-	echo "# for zsh" >> ~/.bashrc && \
-	echo "alias zsource_ROS1='source /opt/ros/kinetic/setup.zsh'">> ~/.bashrc && \
-	echo "alias zsource_ROS1_ROBOY_WS='source ~/DeepAndReinforced/ROS1_ROBOY_WS/devel/setup.zsh'" >> ~/.bashrc && \
-	echo "alias zsource_ROS2_ROBOY_WS='source ~/DeepAndReinforced/ROS2_ROBOY_WS/install/setup.zsh'" >> ~/.bashrc && \
-	echo "alias zsource_ROS2_INSTALL_WS='source ~/DeepAndReinforced/ROS2_INSTALL_WS/install/setup.zsh'" >> ~/.bashrc && \
+echo "# for zsh" >> ~/.bashrc && \
+echo "alias zsource_ROS1='source /opt/ros/kinetic/setup.zsh'">> ~/.bashrc && \
+echo "alias zsource_ROS1_ROBOY_WS='source ~/DeepAndReinforced/ROS1_ROBOY_WS/devel/setup.zsh'" >> ~/.bashrc && \
+echo "alias zsource_ROS2_ROBOY_WS='source ~/DeepAndReinforced/ROS2_ROBOY_WS/install/setup.zsh'" >> ~/.bashrc && \
+echo "alias zsource_ROS2_INSTALL_WS='source ~/DeepAndReinforced/ROS2_INSTALL_WS/install/setup.zsh'" >> ~/.bashrc && \
 
-	echo "" >> ~/.bashrc && \
+echo "" >> ~/.bashrc && \
 
-	echo "# after each cd command the terminal will execute ll automatically" >> ~/.bashrc && \
-	echo "alias ll='ls -al'" >> ~/.bashrc && \
-	echo 'll\nfunction cd {\n    builtin cd "$@" && ll\n    }' >> ~/.bashrc && \
+echo "# after each cd command the terminal will execute ll automatically" >> ~/.bashrc && \
+echo "alias ll='ls -al'" >> ~/.bashrc && \
+echo 'll\nfunction cd {\n    builtin cd "$@" && ll\n    }' >> ~/.bashrc && \
 
-	echo "" >> ~/.bashrc && \
+echo "" >> ~/.bashrc && \
 
-	echo "# .. is the same as cd .." >> ~/.bashrc && \
-	echo "alias ..='cd ..'">> ~/.bashrc && \
+echo "# .. is the same as cd .." >> ~/.bashrc && \
+echo "alias ..='cd ..'">> ~/.bashrc && \
 
-	echo "" >> ~/.bashrc && \
+echo "" >> ~/.bashrc && \
 
-	echo "# some git shortcuts" >> ~/.bashrc && \
-	echo 'alias ga="git add $@"' >> ~/.bashrc && \
-	echo 'alias gb="git branch $@"' >> ~/.bashrc && \
-	echo 'alias gca="git commit --amend"' >> ~/.bashrc && \
-	echo 'alias gco="git checkout $@"' >> ~/.bashrc && \
-	echo 'alias gcm="git commit -m $@"' >> ~/.bashrc && \
-	echo 'alias gd="git diff $@"' >> ~/.bashrc && \
-	echo 'alias gl="git log"' >> ~/.bashrc && \
-	echo 'alias glg="git log --all --decorate --oneline --graph $@"' >> ~/.bashrc && \
-	echo 'alias gmco="git merge --continue"' >> ~/.bashrc && \
-	echo 'alias gr="git reset $@"' >> ~/.bashrc && \
-	echo 'alias gst="git status"' >> ~/.bashrc
+echo "# some git shortcuts" >> ~/.bashrc && \
+echo 'alias ga="git add $@"' >> ~/.bashrc && \
+echo 'alias gb="git branch $@"' >> ~/.bashrc && \
+echo 'alias gca="git commit --amend"' >> ~/.bashrc && \
+echo 'alias gco="git checkout $@"' >> ~/.bashrc && \
+echo 'alias gcm="git commit -m $@"' >> ~/.bashrc && \
+echo 'alias gd="git diff $@"' >> ~/.bashrc && \
+echo 'alias gl="git log"' >> ~/.bashrc && \
+echo 'alias glg="git log --all --decorate --oneline --graph $@"' >> ~/.bashrc && \
+echo 'alias gmco="git merge --continue"' >> ~/.bashrc && \
+echo 'alias gr="git reset $@"' >> ~/.bashrc && \
+echo 'alias gst="git status"' >> ~/.bashrc
