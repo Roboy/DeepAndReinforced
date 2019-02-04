@@ -3,6 +3,6 @@
 
 # Python virtual env
 env/
+__pycache__/
 
-# Tensorboard
-tensorboard_out/
+ROS2_INSTALL_WS/
