@@ -1,6 +1,7 @@
 [submodule "gym-roboy"]
 	path = gym-roboy
 	url = https://github.com/Roboy/gym-roboy.git
+	branch = master
 [submodule "deep_roboy_contol"]
 	path = deep_roboy_control
 	url = https://github.com/Roboy/deep_roboy_contol.git
