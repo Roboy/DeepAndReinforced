@@ -7,10 +7,7 @@ env_variables_are_set() {
 }
 
 env_variables_are_set
-args=($@)
 
-echo ${args[0]}
-
-bash "./init_cardsflow.sh" ${args[0]}&
+nohup bash "./init_cardsflow.sh" $1 &
 sleep 3s
 bash "./init_bridge.sh"
