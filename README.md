@@ -1,5 +1,5 @@
 # IDEA
-Control tendons of the cable robots with reinforcement learning. Set up easily integratable tool to enable training any cable robots for goal reach tasks. 
+Control tendons of the cable robots to reach commanded position for joint with reinforcement learning. Set up easily integratable tool to enable training any cable robots for goal reach tasks. 
 
 # How to start
 - Initialize and update every submodule ```bash git submodule update --init --recursive```.
@@ -28,8 +28,8 @@ PS: currently debian packages are not working for the bridge installation.
   - **CARDSFLOW**
     - This repository provides a full pipeline for Cable Robots from CAD in Autodesk Fusion 360 to full simulation and control of these robots.
   - **Kindyn**
-    - this repo contains the core c++ implementation for controlling cable robots
-    - GymFunction class implements the gym services.[Gym Function class](https://github.com/CARDSflow/kindyn/blob/generalizationGym/src/gymFunctions.cpp)
+    - this repo contains the core c++ implementation for controlling cable robots. For more [info](https://github.com/CARDSflow/kindyn/tree/deepRoboy-feature)
+    - GymFunction class implements the gym services. [Gym Function class](https://github.com/CARDSflow/kindyn/blob/generalizationGym/src/gymFunctions.cpp)
   - **roboy_communicaion**
     - ROS1 communication messages and services are provided in [here](https://github.com/Roboy/roboy_communication/tree/master)
     - ROS2 communication messages and services are provided in [here](https://github.com/Roboy/roboy_communication/tree/bouncy)
