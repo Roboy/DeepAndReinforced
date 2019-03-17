@@ -28,12 +28,12 @@ where `num_cpus` is the number of cpus to use.
 # Submodules: What do they do?
   Relevant submodules.
   - **gym-roboy**
-    - Implements OPENAI gym environment to train CARDSflow robots uses ROS2 for communication to simulation.For more [info](https://github.com/Roboy/gym-roboy)
+    - Implements OPENAI gym environment to train CARDSflow robots uses ROS2 for communication to the simulation.
   - **CARDSFLOW**
     - This repository provides a full pipeline for Cable Robots from CAD in Autodesk Fusion 360 to full simulation and control of these robots.
   - **Kindyn**
-    - this repo contains the core c++ implementation for controlling cable robots. For more [info](https://github.com/CARDSflow/kindyn/tree/deepRoboy-feature)
-    - GymFunction class implements the gym services. [Gym Function class](https://github.com/CARDSflow/kindyn/blob/generalizationGym/src/gymFunctions.cpp)
+    - this repo contains the core c++ implementation for controlling cable robots.
+    - The ROS services used to communicate to the simulation are implemented in: https://github.com/CARDSflow/kindyn/blob/deepRoboy-feature/src/GymServices.cpp
   - **roboy_communicaion**
     - ROS1 communication messages and services are provided in [here](https://github.com/Roboy/roboy_communication/tree/master)
     - ROS2 communication messages and services are provided in [here](https://github.com/Roboy/roboy_communication/tree/bouncy)
