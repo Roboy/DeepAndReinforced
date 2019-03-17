@@ -19,8 +19,12 @@ PS: currently debian packages are not working for the bridge installation.
     - ROS2_ROBOY_WS: use the path of ROS2_ROBOY_WS under this repo
     - ROS1_ROBOY_WS: use the path of ROS1_ROBOY_WS under this repo
 - Start the simulation with https://github.com/Roboy/DeepAndReinforced/blob/master/bridge_scripts/launch_simulation.sh
-- Start training under gym-roboy repo by typing in termina `python3 -m gym_roboy.visualize_agent.py`
-
+- Start training under gym-roboy repo by typing in terminal:
+```bash
+cd gym-roboy/
+python3 -m gym_roboy.train_parallel num_cpus
+```
+where `num_cpus` is the number of cpus to use.
 # Submodules: What do they do?
   Relevant submodules.
   - **gym-roboy**
