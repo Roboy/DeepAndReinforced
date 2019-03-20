@@ -1,5 +1,6 @@
 # IDE
 .idea/
+nohup.out
 
 # Python virtual env
 env/
